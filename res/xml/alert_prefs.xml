@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2011 Michael R. Falcone
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+ 	http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:sb="http://schemas.android.com/apk/res/com.mma.missedmessagealerts">
+
+
+    <PreferenceCategory android:title="@string/pref_cat_general">
+
+        <CheckBoxPreference android:key="PREF_ENABLE_COM_TYPE"
+                            android:title="@string/pref_title_enablecomtype"
+                            android:summary="@string/pref_sum_enablecomtype"
+                            android:persistent="false"/>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/pref_cat_timing">
+
+        <ListPreference android:key="PREF_ALERT_INTERVAL"
+                        android:title="@string/pref_title_alertinterval"
+                        android:summary="@string/pref_sum_alertinterval"
+                        android:defaultValue="@string/pref_default_alertinterval"
+                        android:entries="@array/pref_entries_alertinterval"
+                        android:entryValues="@array/pref_values_alertinterval"
+                        android:persistent="false"/>
+
+        <ListPreference android:key="PREF_ALERT_DURATION"
+                        android:title="@string/pref_title_alertduration"
+                        android:summary="@string/pref_sum_alertduration"
+                        android:defaultValue="@string/pref_default_alertduration"
+                        android:entries="@array/pref_entries_alertduration"
+                        android:entryValues="@array/pref_values_alertduration"
+                        android:persistent="false"/>
+
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory android:title="@string/pref_cat_alerts">
+
+        <CheckBoxPreference android:key="PREF_FLASH_SCREEN_ALERT"
+                            android:title="@string/pref_title_flashscreenalert"
+                            android:summary="@string/pref_sum_flashscreenalert"
+                            android:defaultValue="@bool/pref_default_flashscreenalert"
+                            android:persistent="false"/>
+
+        <CheckBoxPreference android:key="PREF_DIM_FLASH_MODE"
+                            android:title="@string/pref_title_dimflashmode"
+                            android:summary="@string/pref_sum_dimflashmode"
+                            android:defaultValue="@bool/pref_default_dimflashmode"
+                            android:persistent="false"/>
+
+        <CheckBoxPreference android:key="PREF_VIBRATE_ALERT"
+                            android:title="@string/pref_title_vibratealert"
+                            android:summary="@string/pref_sum_vibratealert"
+                            android:defaultValue="@bool/pref_default_vibratealert"
+                            android:persistent="false"/>
+
+        <ListPreference android:key="PREF_VIBRATE_STYLE"
+                        android:title="@string/pref_title_vibratestyle"
+                        android:summary="@string/pref_sum_vibratestyle"
+                        android:defaultValue="@string/pref_default_vibratestyle"
+                        android:entries="@array/pref_entries_vibratestyle"
+                        android:entryValues="@array/pref_values_vibratestyle"
+                        android:persistent="false"/>
+
+        <CheckBoxPreference android:key="PREF_AUDIO_ALERT"
+                            android:title="@string/pref_title_audioalert"
+                            android:summary="@string/pref_sum_audioalert"
+                            android:defaultValue="@bool/pref_default_audioalert"
+                            android:persistent="false"/>
+
+        <RingtonePreference android:key="PREF_ALERT_TONE"
+                            android:title="@string/pref_title_alerttone"
+                            android:defaultValue="@string/pref_default_alerttone"
+                            android:ringtoneType="all"
+                            android:showDefault="true"
+                            android:showSilent="true"
+                            android:persistent="true"/>
+
+        <com.mma.seekbarpreference.DefinedSeekbarPreference android:key="PREF_AUDIO_ALERT_VOLUME"
+                                                            android:title="@string/pref_title_audioalertvolume"
+                                                            android:summary="@string/pref_sum_audioalertvolume"
+                                                            android:defaultValue="@integer/pref_default_audioalertvolume"
+                                                            sb:isFree="false"
+                                                            sb:possibleValues="@array/pref_values_audioalertvolume"
+                                                            android:persistent="false"/>
+
+        <CheckBoxPreference android:key="PREF_AUDIO_DISABLE_ON_SILENT"
+                            android:title="@string/pref_title_audiodisableonsilent"
+                            android:summary="@string/pref_sum_audiodisableonsilent"
+                            android:defaultValue="@bool/pref_default_audiodisableonsilent"
+                            android:persistent="false"/>
+
+        <Preference android:key="PREF_AUDIO_PREVIEW"
+                    android:title="@string/pref_title_audiopreviewplay"
+                    android:summary="@string/pref_sum_audiopreviewplay"
+                    android:persistent="false"/>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/pref_cat_scheduling">
+
+        <CheckBoxPreference android:key="PREF_ENABLE_SCHEDULING"
+                            android:title="@string/pref_title_enablescheduling"
+                            android:summary="@string/pref_sum_enablescheduling"
+                            android:persistent="false"/>
+
+        <Preference android:key="PREF_PICK_SCHEDULE_START"
+                    android:title="@string/pref_title_pickschedulestart"
+                    android:summary="@string/pref_sum_pickschedulestart"
+                    android:persistent="false"/>
+
+        <Preference android:key="PREF_PICK_SCHEDULE_END"
+                    android:title="@string/pref_title_pickscheduleend"
+                    android:summary="@string/pref_sum_pickscheduleend"
+                    android:persistent="false"/>
+
+    </PreferenceCategory>
+
+
+
+</PreferenceScreen>

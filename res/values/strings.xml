@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2011 Michael R. Falcone
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+ 	http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+
+<resources>
+    <string name="app_name">Missed Message Alerts</string>
+    <string name="app_copyright">Copyright © 2011-2012 Michael R. Falcone</string>
+    <string name="app_about">MMA alerts you when you miss messages and communication.</string>
+    <string name="version">Version</string>
+
+    <string name="pref_screentitle">MMA Preferences</string>
+    <string name="pref_alertscreentitle">Alert Preferences -</string>
+    <string name="pref_menu_reset">Reset to Defaults</string>
+    <string name="pref_menu_about">About</string>
+    <string name="pref_menu_whatsnew">What\'s New?</string>
+    <string name="pref_cat_timing">Timing</string>
+    <string name="pref_cat_power">Battery</string>
+    <string name="pref_cat_communications">Communications</string>
+    <string name="pref_cat_general">General</string>
+    <string name="pref_cat_alerts">Alerts</string>
+    <string name="pref_cat_scheduling">Scheduling</string>
+
+    <string name="pref_title_enablealerts">Enable Alerts</string>
+    <string name="pref_title_alertinterval">Alert Interval</string>
+    <string name="pref_title_alertduration">Duration of Alerts</string>
+    <string name="pref_title_dimflashmode">Dim Flash Mode</string>
+    <string name="pref_title_disableonbattery">Disable on Low Battery</string>
+    <string name="pref_title_lowbatterypercentage">Low Battery Percentage</string>
+    <string name="pref_title_shownotification">Show Notification</string>
+    <string name="pref_title_textmessages">Text Messages</string>
+    <string name="pref_title_missedcalls">Missed Calls</string>
+    <string name="pref_title_voicemail">Voice Mail</string>
+    <string name="pref_title_flashscreenalert">Flash Screen</string>
+    <string name="pref_title_vibratealert">Vibrate Device</string>
+    <string name="pref_title_vibratestyle">Vibrate Style</string>
+    <string name="pref_title_audioalert">Audio Alert</string>
+    <string name="pref_title_alerttone">Alert Tone</string>
+    <string name="pref_title_audioalertvolume">Alert Volume</string>
+    <string name="pref_title_audiodisableonsilent">No Audio on Silent</string>
+    <string name="pref_title_audiopreviewplay">Preview Audio Alert</string>
+    <string name="pref_title_audiopreviewstop">Stop Preview</string>
+    <string name="pref_title_enablecomtype">Enable</string>
+    <string name="pref_title_enablescheduling">Enable Scheduling</string>
+    <string name="pref_title_pickschedulestart">Set Time to Disable</string>
+    <string name="pref_title_pickscheduleend">Set Time to Re-enable</string>
+
+    <string name="pref_sum_enablealerts">Uncheck to disable continuous alerts</string>
+    <string name="pref_sum_alertinterval">Time between alerts</string>
+    <string name="pref_sum_alertduration">Length of time to alert before automatically stopping</string>
+    <string name="pref_sum_dimflashmode">Flash with dim light rather than full brightness</string>
+    <string name="pref_sum_disableonbattery">Automatically stop alerts if battery falls below a certain percentage
+    </string>
+    <string name="pref_sum_lowbatterypercentage">Battery percentage at which to disable alerts</string>
+    <string name="pref_sum_shownotification">Display status bar icon while alerting to quickly stop alerts</string>
+    <string name="pref_sum_textmessages">Change settings for text alerts</string>
+    <string name="pref_sum_missedcalls">Change settings for missed call alerts</string>
+    <string name="pref_sum_voicemail">Change settings for voicemail alerts</string>
+    <string name="pref_sum_flashscreenalert">Enable periodic screen flashes</string>
+    <string name="pref_sum_vibratealert">Enable vibrations</string>
+    <string name="pref_sum_vibratestyle">Set vibration pattern</string>
+    <string name="pref_sum_audioalert">Enable audio tone alert</string>
+    <string name="pref_sum_audioalertvolume">Set volume at which to play audio alerts</string>
+    <string name="pref_sum_audiodisableonsilent">When checked, the audio alert will not play when device is in silent mode</string>
+    <string name="pref_sum_audiopreviewplay">Tap to preview audio alert</string>
+    <string name="pref_sum_audiopreviewstop">Tap to stop playback</string>
+    <string name="pref_sum_enablecomtype">Enable</string>
+    <string name="pref_sum_enablescheduling">Check to set time range where alerts are disabled</string>
+    <string name="pref_sum_pickschedulestart">Time to disable:</string>
+    <string name="pref_sum_pickscheduleend">Time to enable:</string>
+
+
+    <string-array name="pref_entries_alertduration">
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+        <item>30 minutes</item>
+        <item>Forever</item>
+    </string-array>
+
+    <string-array name="pref_entries_alertinterval">
+        <item>6 seconds</item>
+        <item>15 seconds</item>
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>3 minutes</item>
+        <item>5 minutes</item>
+        <item>10 minutes</item>
+    </string-array>
+
+    <string-array name="pref_entries_vibratestyle">
+        <item>Style 1</item>
+        <item>Style 2</item>
+        <item>Style 3</item>
+        <item>Style 4</item>
+        <item>Style 5</item>
+    </string-array>
+
+    <string name="pref_duration_message">Warning! Choosing to alert without a duration limit may significantly
+        increase battery usage.
+    </string>
+    <string name="pref_high_interval_message">You have chosen an alert duration shorter than your alert
+    interval. This means you may not receive alerts until you chose a shorter interval or longer duration.</string>
+    <string name="pref_message_button_ok">OK</string>
+
+    <string name="notify_title">MMA is Alerting</string>
+    <string name="notify_text">Tap to quickly stop all</string>
+    <string name="notify_ticker">MMA</string>
+
+    <string name="whats_new_header">What\'s new in version</string>
+    <string name="whats_new">* A bug has been fixed that caused chosen audio tones to be forgotten\n
+        * You now have the ability to set different alerts for each communication type\n
+        * You can now specify a time range where alerts are disabled\n
+        * Alerts are now postponed while a phonecall is in session\n
+        * Various small bug fixes and enhancements</string>
+
+    <string name="ifyoulike">If you like MMA, please</string>
+    <string name="marketlinktext">Rate It!</string>
+    <string name="marketlinkurl">market://details?id=com.mma.missedmessagealerts</string>
+
+</resources>

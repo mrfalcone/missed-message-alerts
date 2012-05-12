@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2011 Michael R. Falcone
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+ 	http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+
+<resources>
+
+    <string-array name="pref_values_alertinterval">
+        <item>6</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>300</item>
+        <item>600</item>
+    </string-array>
+
+    <string-array name="pref_values_alertduration">
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1800</item>
+        <item>0</item>
+    </string-array>
+
+    <integer-array name="pref_values_audioalertvolume">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>40</item>
+        <item>50</item>
+        <item>60</item>
+        <item>70</item>
+        <item>80</item>
+        <item>90</item>
+        <item>100</item>
+    </integer-array>
+
+    <string-array name="pref_values_vibratestyle">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+
+
+    <!-- Default preference values -->
+    <item type="bool" name="pref_default_enablealerts">true</item>
+    <item type="bool" name="pref_default_dimflashmode">false</item>
+    <item type="bool" name="pref_default_disableonbattery">false</item>
+    <item type="bool" name="pref_default_shownotification">true</item>
+    <item type="bool" name="pref_default_textmessages">true</item>
+    <item type="bool" name="pref_default_missedcalls">false</item>
+    <item type="bool" name="pref_default_voicemail">false</item>
+    <item type="bool" name="pref_default_flashscreenalert">true</item>
+    <item type="bool" name="pref_default_vibratealert">false</item>
+    <item type="bool" name="pref_default_audioalert">false</item>
+    <item type="bool" name="pref_default_audiodisableonsilent">false</item>
+    <item type="bool" name="pref_default_enablescheduling">false</item>
+
+    <integer name="pref_default_lowbatterypercentage">30</integer>
+    <integer name="pref_default_audioalertvolume">100</integer>
+    <integer name="pref_default_scheduledhourstart">0</integer>
+    <integer name="pref_default_scheduledhourend">0</integer>
+    <integer name="pref_default_scheduledminutestart">0</integer>
+    <integer name="pref_default_scheduledminuteend">0</integer>
+
+    <string name="pref_default_alertinterval">6</string>
+    <string name="pref_default_alertduration">60</string>
+    <string name="pref_default_vibratestyle">0</string>
+
+    <string name="pref_default_alerttone"></string>
+
+</resources>

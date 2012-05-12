@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright 2011 Michael R. Falcone
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+ 	http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:sb="http://schemas.android.com/apk/res/com.mma.missedmessagealerts">
+
+
+    <PreferenceCategory android:title="@string/pref_cat_general">
+
+        <CheckBoxPreference android:key="PREF_ENABLE_ALERTS"
+                            android:title="@string/pref_title_enablealerts"
+                            android:summary="@string/pref_sum_enablealerts"
+                            android:defaultValue="@bool/pref_default_enablealerts"
+                            android:persistent="false"/>
+
+        <CheckBoxPreference android:key="PREF_SHOW_NOTIFICATION"
+                            android:title="@string/pref_title_shownotification"
+                            android:summary="@string/pref_sum_shownotification"
+                            android:defaultValue="@bool/pref_default_shownotification"
+                            android:persistent="false"/>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/pref_cat_communications">
+
+        <Preference android:key="PREF_EDIT_TEXT_ALERT"
+                    android:title="@string/pref_title_textmessages"
+                    android:summary="@string/pref_sum_textmessages"/>
+
+        <Preference android:key="PREF_EDIT_MISSEDCALL_ALERT"
+                    android:title="@string/pref_title_missedcalls"
+                    android:summary="@string/pref_sum_missedcalls"/>
+
+        <Preference android:key="PREF_EDIT_VOICEMAIL_ALERT"
+                    android:title="@string/pref_title_voicemail"
+                    android:summary="@string/pref_sum_voicemail"/>
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/pref_cat_power">
+
+        <CheckBoxPreference android:key="PREF_DISABLE_ON_BATTERY"
+                            android:title="@string/pref_title_disableonbattery"
+                            android:summary="@string/pref_sum_disableonbattery"
+                            android:defaultValue="@bool/pref_default_disableonbattery"
+                            android:persistent="false"/>
+
+        <com.mma.seekbarpreference.DefinedSeekbarPreference android:key="PREF_LOW_BATTERY_PERCENTAGE"
+                                                        android:title="@string/pref_title_lowbatterypercentage"
+                                                        android:summary="@string/pref_sum_lowbatterypercentage"
+                                                        android:defaultValue="@integer/pref_default_lowbatterypercentage"
+                                                        sb:isFree="true"
+                                                        android:persistent="false"/>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
