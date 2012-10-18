@@ -81,26 +81,6 @@ public class AlertPreferences {
 
     // CONSTRUCTOR -----------------------------------------
 
-    private AlertPreferences(){
-
-        KEY_ENABLED = "";
-        KEY_ALERT_INTERVAL = "";
-        KEY_ALERT_DURATION = "";
-        KEY_FLASH_SCREEN_ALERT = "";
-        KEY_DIM_FLASH_MODE = "";
-        KEY_VIBRATE_ALERT = "";
-        KEY_VIBRATE_STYLE = "";
-        KEY_AUDIO_ALERT = "";
-        KEY_ALERT_TONE = "";
-        KEY_AUDIO_ALERT_VOLUME = "";
-        KEY_AUDIO_DISABLE_ON_SILENT = "";
-        KEY_ENABLE_SCHEDULING = "";
-        KEY_SCHEDULED_HOUR_START = "";
-        KEY_SCHEDULED_HOUR_END = "";
-        KEY_SCHEDULED_MINUTE_START = "";
-        KEY_SCHEDULED_MINUTE_END = "";
-    }
-
 
     /**
      * Constructs a new AlertPreferences object. This should not be called

@@ -1,0 +1,7 @@
+.idea/[^.]*
+out/[^.]*
+Mma.iml
+bin/[^.]*
+.project
+.classpath
+project.properties

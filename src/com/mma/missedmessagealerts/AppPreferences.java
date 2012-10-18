@@ -62,8 +62,6 @@ public class AppPreferences {
 
     // CONSTRUCTOR -----------------------------------------
 
-    private AppPreferences(){}
-
     /**
      * Constructs a new AppPreferences object.
      * @param appContext the application context used to load the preferences file
